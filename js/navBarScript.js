@@ -1,53 +1,38 @@
 //Переключение вкладок без перезагрузки страницы
 $(document).ready(function(){   //Переход на страницу
-    $("#mainDiv").show();
-    $("#photoVideoDiv").hide();     
-    $("#magicContestDiv").hide();
-    $("#priceContactsDiv").hide();
-    $("#guestDiv").hide();
+    $("#newPosts").show();
+    $("#music").hide();     
+    $("#videos").hide();
+    $("#photos").hide();
 });
 
-$("#mainPage").click(function () {  //Обработка клика по вкладке "Главная"
-    $("#mainDiv").show();
-    $("#photoVideoDiv").hide();
-    $("#magicContestDiv").hide();
-    $("#priceContactsDiv").hide();
-    $("#guestDiv").hide();
+$("#newPostz").click(function () {  //Обработка клика по вкладке "Главная"
+    $("#newPosts").show();
+    $("#music").hide();
+    $("#videos").hide();
+    $("#photos").hide();
 	
 });
 
-$("#photoVideoPage").click(function () {    //Обработка клика по вкладке "Фото/Видео"
-    $("#mainDiv").hide();
-    $("#photoVideoDiv").show();
-    $("#magicContestDiv").hide();
-    $("#priceContactsDiv").hide();
-    $("#guestDiv").hide();
+$("#muzic").click(function () {    //Обработка клика по вкладке "Фото/Видео"
+    $("#newPosts").hide();
+    $("#music").show();
+    $("#videos").hide();
+    $("#photos").hide();
 	
 });
-/*
-$("#magicContestPage").click(function () {  //Обработка клика по вкладке "Фото/Видео"
-    $("#mainDiv").hide();
-    $("#photoVideoDiv").hide();
-    $("#magicContestDiv").show();
-    $("#priceContactsDiv").hide();
-    $("#guestDiv").hide();
-	
-});
-*/
-$("#priceContactsPage").click(function () { //Обработка клика по вкладке "Цены/Контакты"
-    $("#mainDiv").hide();
-    $("#photoVideoDiv").hide();
-    $("#magicContestDiv").hide();
-    $("#priceContactsDiv").show();
-    $("#guestDiv").hide();
+$("#videoz").click(function () { //Обработка клика по вкладке "Цены/Контакты"
+    $("#newPosts").hide();
+    $("#music").hide();
+    $("#videos").show();
+    $("#photos").hide();
 	
 });
 
-$("#guestPage").click(function () { //Обработка клика по вкладке "Гостевая"
-    $("#mainDiv").hide();
-    $("#photoVideoDiv").hide();
-    $("#magicContestDiv").hide();
-    $("#priceContactsDiv").hide();
-    $("#guestDiv").show();
+$("#photoz").click(function () { //Обработка клика по вкладке "Гостевая"
+    $("#newPosts").hide();
+    $("#music").hide();
+    $("#videos").hide();
+    $("#photos").show();
 	
 });

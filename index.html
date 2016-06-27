@@ -1,270 +1,48 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Волшебный Гоблин</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/emailValidation.js">
-    <!--<link rel="stylesheet" href="js/popup.js">-->
-  </head>
-  <body>
-    <div class="header">
-    	<ul>
-    		<li>
-    			<input type="radio" name="navigation" id="mainPage" class="navBar" value="mainPage" checked>
-    			<label for="mainPage">Главная</label>    			
-    		</li>
-    		<li>
-    			<input type="radio" name="navigation" id="photoVideoPage" class="navBar" value="photoVideoPage">
-    			<label for="photoVideoPage">Фото/Видео</label>    			
-    		</li>
-	    	<li>
-    			<input type="radio" name="navigation" id="magicContestPage" class="navBar" value="magicContestPage" disabled>
-    			<label for="magicContestPage" class="desabled">Магазин</label>
-    		</li>
-    		<li>
-    			<input type="radio" name="navigation" id="priceContactsPage" class="navBar" value="priceContactsPage">
-    			<label for="priceContactsPage" disabled>Цены/Контакты</label>
-    		</li>
-    		<li>
-    			<input type="radio" name="navigation" id="guestPage" class="navBar" value="guestPage">
-    			<label for="guestPage">Гостевая</label>
-    		</li>
-    	</ul>
-	</div>
-	<div class="main" id="mainDiv">
-		<div class="container">
-			<div class="row otstup">
-			<div class="col-md-1 col-sm-1"></div>
-				<div class="col-md-10 col-sm-10">
-					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-						<!-- Indicators -->
-						<ol class="carousel-indicators">
-							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="4"></li>
-						</ol>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Magician Goblin</title>
+    <!--<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 
-					  <!-- Wrapper for slides -->
-					  <div class="carousel-inner">
-						<div class="item active">
-							<img src="images/slider/1.jpg" width="100%" height="100%" alt="...">
-							<div class="carousel-caption">
-								<h3>Bicycle Standart</h3>
-								<p>Какая-то инфа про эти карты.</p>
-							</div>
-						</div>
-						
-						<div class="item">
-							<img src="images/slider/2.jpg" width="100%" height="100%" alt="...">
-							<div class="carousel-caption">
-								<h3>David Blane</h3>
-								<p>И тут какая то инфа...</p>
-							</div>
-						</div>
-						
-						<div class="item">
-							<img src="images/slider/3.jpg" width="100%" height="100%" alt="...">
-							<div class="carousel-caption">
-								<h3>Пружинка</h3>
-								<p>Сел, сделал и все...</p>
-							</div>
-						</div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#whitesmoke'],
+            });
+        });
+    </script>
 
-						<div class="item">
-							<img src="images/slider/4.jpg" width="100%" height="100%" alt="...">
-							<div class="carousel-caption">
-								<h3>Даниел Мэдисон</h3>
-								<p>Ловкость рук</p>
-							</div>
-						</div>
-
-						<div class="item">
-							<img src="images/slider/5.jpg" width="100%" height="100%" alt="...">
-							<div class="carousel-caption">
-								<h3>Дэвид Блэйн</h3>
-								<p>Реальность или магия?</p>
-							</div>
-						</div>
-					  </div>
-
-					  <!-- Controls -->
-					  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left"></span>
-					  </a>
-					  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right"></span>
-					  </a>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="photovideo" id="photoVideoDiv">
-	  <div class="col-md-1 col-sm-1"></div>
-	  <div class="col-md-10 col-sm-10 greyBlock">
-		  <div class="col-md-6 col-sm-6">
-		    <h5>Фото</h5>
-		    <div class="col-md-12 col-sm-12">
-		      <div class="col-md-1 col-sm-1"></div>
-		      <div class="col-md-3 col-sm-3 photoFrame"><a href="images/photoBlock/1.jpg"><img src="images/photoBlock/1.jpg" alt="..." class="photo"></a></div>
-		      <div class="col-md-1 col-sm-1"></div>
-		      <div class="col-md-3 col-sm-3 photoFrame"><a href="images/photoBlock/2.jpg"><img src="images/photoBlock/2.jpg" alt="..." class="photo"></a></div>
-		      <div class="col-md-1 col-sm-1"></div>
-		      <div class="col-md-3 col-sm-3 photoFrame"><a href="images/photoBlock/3.jpg"><img src="images/photoBlock/3.jpg" alt="..." class="photo"></a></div>
-		     </div> <div class="col-md-12">
-		      <div class="col-md-1 col-sm-1"></div>
-		      <div class="col-md-3 col-sm-3 photoFrame"><a href="images/photoBlock/4.jpg"><img src="images/photoBlock/4.jpg" alt="..." class="photo"></a></div>
-		      <div class="col-md-1 col-sm-1"></div>
-		      <div class="col-md-3 col-sm-3 photoFrame"><a href="images/photoBlock/5.jpg"><img src="images/photoBlock/5.jpg" alt="..." class="photo"></a></div>
-		      <div class="col-md-1 col-sm-1"></div>
-		      <div class="col-md-3 col-sm-3 photoFrame"><a href="images/photoBlock/6.jpg"><img src="images/photoBlock/6.jpg" alt="..." class="photo"></a></div>
-		     </div> 
-		    <div class="col-md-12 col-sm-12">
-		      <div class="col-md-1 col-sm-1"></div>
-		      <div class="col-md-3 col-sm-3 photoFrame"><a href="images/photoBlock/7.jpg"><img src="images/photoBlock/7.jpg" alt="..." class="photo"></a></div>
-		<!--  <div class="col-md-1"></div>
-		      <div class="col-md-3 photoFrame"></div>
-		      <div class="col-md-1"></div>
-		      <div class="col-md-3 photoFrame"></div> -->
-		     </div> 
-		  </div>
-		  <div class="col-md-6 col-sm-6">
-		    <h5>Видео</h5>
-		    <div class="col-md-12 col-sm-12">
-		    <!--<div class="col-md-1"></div>-->
-		    <div class="col-md-5 col-sm-5 videoFrame"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/ACVEdDosHtk" frameborder="0" allowfullscreen></iframe></div>
-		    <div class="col-md-2 col-sm-2"></div> 
-		    <div class="col-md-5 col-sm-5 videoFrame"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Qq6LRhygAE4" frameborder="0" allowfullscreen></iframe></div>
-		    <!--<div class="col-md-1"></div>-->
-		    </div> 
-		    <div class="col-md-12 col-sm-12">
-		    <!--<div class="col-md-1"></div>-->
-		    <div class="col-md-5 col-sm-5 videoFrame"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/6MMmy8qpGT0" frameborder="0" allowfullscreen></iframe></div>
-		 	<div class="col-md-2 col-sm-2"></div> 
-		    <div class="col-md-5 col-sm-5 videoFrame"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Q2itvcDDCDU" frameborder="0" allowfullscreen></iframe></div>
-		    <!--<div class="col-md-1"></div> -->
-		    </div> 
-		    <div class="col-md-12 col-sm-12">
-		    <!--<div class="col-md-1"></div>-->
-		    <div class="col-md-5 col-sm-5 videoFrame"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/QY_CNn5Dd-Y" frameborder="0" allowfullscreen></iframe></div>
-		 	<div class="col-md-2 col-sm-2"></div> 
-		    <!--<div class="col-md-5 videoFrame"></div>
-		    <div class="col-md-1"></div> -->
-		    </div> 
-		  </div>
-		</div>
-	</div>
-	<div class="photovideo" id="priceContactsDiv">
-  <div class="col-md-1 col-sm-1"></div>
-  <div class="col-md-10 col-sm-10 greyBlock">
-  		<div class="col-md-1 col-sm-1"></div>
-		  <div class="col-md-4 col-sm-4">
-		    <h5>Цены</h5>
-		    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		  </div>
-		  	<div class="col-md-7 col-sm-7">
-		    	<h5>Контакты</h5>
-	      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		    	<h5>Предложить выступление</h5>
-		    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		    	<form method="post" action="" id="needMagician">
-			   		<p>Ваше имя: <input type="text" name="name" placeholder="Ваше имя"> Ваш e-mail: <input type="text" name="email" id="validate" placeholder="Ваш e-mail"><span id="validEmail"></span></p>
-					<p><input type="submit" value="Отправить"> <input type="reset" value="Очистить"></p>
-		    	</form>
-		  	</div>
-	  </div>
-	</div>
-  <div class="guest" id="guestDiv">
-	    <div class="col-md-1 col-sm-1"></div>
-	    <div class="col-md-10 col-sm-10 greyBlock">
-  			<div class="col-md-1 col-sm-1"></div>
-	    	<div class="col-md-4 col-sm-4">
-	    		<h5>Оставть отзыв</h5>
-	    		<p>
-	    			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	    		</p>
-	    		<form>
-		    		<p>Ваше имя: <input type="text" name="hisName" class="nameMarginLeft" placeholder="Ваше имя"></p>
-		    		<p>Ваше e-mail: <input type="text" id="validate1" name="hisEmail" placeholder="Ваш e-mail"><span id="validEmail1"></span></p>
-		    		<textarea name="comment" cols="40" rows="6" placeholder="Ваш отзыв..."></textarea>
-					<p><input type="submit" value="Отправить"> <input type="reset" value="Очистить"></p>		    		
-	    		</form>
-	    	</div>
-	    	<div class="col-md-7 col-sm-7">
-	    			<h5>Последние отзывы</h5>
-	    			<p class="who">Морфиус написал 2 часа назад.</p>
-	    			<p class="whoComment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	    			<p class="who">Гудини написал 5 дней назад.</p>
-	    			<p class="whoComment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	    			<p class="who">Гендальф написал неделю назад.</p>
-	    			<p class="whoComment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	    			<p class="who">Волан-де-Морт написал 3 месяца назад.</p>
-	    			<p class="whoComment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	    			<div class="col-md-5 col-sm-5"></div>
-	    			<a onclick="showComments('archiveComments', '500px', '950px');"><button class="arhiveComment">Архив отзывов.</button></a>
+</head>
+<body>
+    <div id="fullpage">
+        <div class="section parent" id="mainSaction">
+        	<div class="row">
+	        	<div class="col-xs-12 col-sm-12 col-md-12">
+	        		<h1>Magician Goblin<br><small>v2.0</small></h1>
+	        	</div>
+	        </div>
+	        <div class="row child">
+		        <div class="col-xs-12 col-sm-12 col-md-12">
+		        	<span class="glyphicon glyphicon-chevron-down arrowdown"></span>
+		        </div>
+		    </div>
+        </div>
+        <div class="section" id="mediaSaction" data-anchor="contentSection">
+        	<div class="row">
+		        <div class="col-xs-12 col-sm-12 col-md-12">
+		        	<span class="glyphicon glyphicon-chevron-up arrowup"></span>
+		        </div>
 		    </div>
 		</div>
-	</div>
-	<div class="col-md-12 col-sm-12 footerCopyright">
-		<p>2016 ©Официальный сайт ...</p>
-	</div>
-    <script src="js/jquery-1.3.2.min.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/navBarScript.js"></script>
-    <script src="js/archiveCommentsScript.js"></script>
-	<script src="js/needMagician.js"></script>
-	<script src="js/emailValidation.js"></script>
-  </body>
+    </div>            
+    <script type="text/javascript" src="js/navBarScript.js"></script>
+</body> 
 </html>
