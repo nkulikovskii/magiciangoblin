@@ -34,6 +34,11 @@ ul li {
 	display: inline-block;
 	list-style-type: none;
 }
+iframe {
+	padding-top: 50px;
+	width: 560px;
+	height: 365px;
+}
 .navBar {
 	display: none;
 }
