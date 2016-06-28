@@ -40,6 +40,9 @@ ul li {
 	display: inline-block;
 	list-style-type: none;
 }
+h1 {
+	text-align: center;
+}
 /*body {
 	background-image: url(../img/background.png) center;
 	background-repeat: no-repeat;
