@@ -33,8 +33,14 @@
 	background-position: center;
 	background-size: 25%;
 }*/
+html {
+	position: relative;
+	min-height: 100%;
+}
 body {
 	overflow-x:hidden;
+	min-height: 100%;
+	margin-bottom: 50px;
 }
 ul {
 	padding: 0;
@@ -73,9 +79,13 @@ iframe {
 }
 img.logo {
 	padding-top: 15px;
+	padding-bottom: 25px;
 }
 img {
 	width: 100%;
+}
+.imageprod {
+	padding-bottom: 20px;
 }
 .btn-default {
 	width: 100%;
@@ -88,13 +98,20 @@ img {
 	text-align: center;
 	color: grey;
 	height: 50px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 p.footerTxt {
 	padding-top: 20px;
 }
 .footerFollow {
-	margin-top: 10px;
+	margin-top: 15px;
 }
+.followsocial {
+	font-size: 25px;
+}
+
 .newSection {
 	padding-top: 20px;
 }
