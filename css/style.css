@@ -33,6 +33,9 @@
 	background-position: center;
 	background-size: 25%;
 }*/
+body {
+	overflow-x:hidden;
+}
 ul {
 	padding: 0;
 }
@@ -84,6 +87,10 @@ img {
 .footer {
 	text-align: center;
 	color: grey;
+	height: 50px;
+}
+p.footerTxt {
+	padding-top: 20px;
 }
 .newSection {
 	padding-top: 20px;
