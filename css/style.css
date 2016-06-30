@@ -56,7 +56,7 @@ a {
 a:hover {
 	text-decoration: none;
 }
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
 	text-align: center;
 }
 .container {
@@ -84,9 +84,6 @@ img.logo {
 img {
 	width: 100%;
 }
-.imageprod {
-	padding-bottom: 20px;
-}
 .btn-default {
 	width: 100%;
 	margin-top: 15px; 
@@ -111,7 +108,9 @@ p.footerTxt {
 .followsocial {
 	font-size: 25px;
 }
-
+.preview {
+	padding-bottom: 20px;
+}
 .newSection {
 	padding-top: 20px;
 }
