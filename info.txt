@@ -1,0 +1,2 @@
+header.png - 1300x200px
+preview - 1300x500px
